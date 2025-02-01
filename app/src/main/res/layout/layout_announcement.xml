@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        android:visibility="invisible"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="@dimen/view_radius"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="8dp" app:contentPadding="8dp">
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <TextView
+                android:text="Message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_msg" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" android:textSize="14sp" android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+        <android.support.v7.widget.AppCompatImageView
+                android:clickable="true"
+                android:focusable="true"
+                style="?attr/actionButtonStyle"
+                android:layout_width="16dp"
+                android:layout_height="16dp" app:srcCompat="@drawable/ic_close_gray_24dp"
+                android:id="@+id/btn_close" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+        <android.support.v7.widget.AppCompatTextView
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/bg_selectable_menu_2"
+                android:text="@string/view"
+                android:textColor="#2196F3"
+                android:padding="5dp"
+                app:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_view" app:layout_constraintEnd_toStartOf="@+id/btn_close"
+                android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:context=".fragment.main.HomeFragment">
+    <FrameLayout android:id="@+id/fl_main_content" android:layout_width="match_parent" android:layout_height="0dp"
+                 app:layout_constraintTop_toTopOf="parent"
+                 android:layout_marginBottom="24dp" app:layout_constraintBottom_toBottomOf="@+id/bnv"/>
+    <com.samyeung.wherever.view.custom.CurvedBottomNavigationView
+            android:id="@+id/bnv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/AppTheme.BottomNavigation"
+            app:elevation="@dimen/bottom_navigation_elevation"
+            app:menu="@menu/bottom_menu"
+    />
+    <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/ic_camera_alt_white_24dp"
+            android:id="@+id/fab_camera"
+            app:fabSize="normal"
+            app:elevation="@dimen/fab_button_elevation"
+            app:layout_constraintBottom_toBottomOf="@+id/bnv"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="8dp"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ItemView1">
+        <attr name="itemView1Title" format="string" />
+        <attr name="itemView1Value" format="string" />
+        <attr name="itemView1CanEdit" format="boolean" />
+        <attr name="itemView1Icon" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ItemView2">
+        <attr name="itemView2Title" format="string" />
+        <attr name="itemView2Value" format="string" />
+        <attr name="itemView2Icon" format="reference" />
+        <attr name="itemView2CanEdit" format="boolean" />
+        <attr name="itemView2AllCap" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ItemView3">
+        <attr name="itemView3Title" format="string" />
+        <attr name="itemView3Icon" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ItemView4">
+        <attr name="itemView4Title" format="string" />
+        <attr name="itemView4Icon" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CommentBoxView">
+        <attr name="commentBoxViewMessage" format="string"/>
+    </declare-styleable>
+</resources>

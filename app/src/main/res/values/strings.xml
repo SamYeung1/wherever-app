@@ -1,0 +1,140 @@
+<resources>
+    <!--Preference-->
+    <string name="pref_title_feedback">Feedback</string>
+    <string name="pref_title_version">Build Version</string>
+    <string name="pref_title_open_source">Open Source Licenses</string>
+    <string name="pref_privacy_policy">Privacy Policy</string>
+    <string name="pref_header_about">About</string>
+    <string name="pref_header_security">Security</string>
+    <string name="pref_title_change_password">Change Password</string>
+    <string name="pref_title_logout">Logout</string>
+    <string name="pref_header_language">Language</string>
+    <string name="pref_title_language">Language</string>
+    <string name="pref_subtitle_language">English</string>
+    <string name="pref_default_value_language">en</string>
+    <string-array name="pref_language_entities">
+        <item>English</item>
+        <item>中文</item>
+    </string-array>
+    <string-array name="pref_language_entities_value">
+        <item>en</item>
+        <item>zh_rTW</item>
+    </string-array>
+    <!--Shared Element-->
+    <string name="shared_ele_image">shared_ele_image</string>
+
+    <string name="app_name">Wherever</string>
+    <!--Message-->
+    <string name="err_input_length">Text is too long</string>
+    <string name="err_input_empty">Please input value</string>
+    <string name="err_input_validate_email">Email Format Invalid</string>
+    <string name="err_password">Password is invalid</string>
+    <string name="err_code">Code is invalid</string>
+    <string name="err_email_is_exist">The email is registered</string>
+    <string name="err_email_is_not_exist">The email is not registered</string>
+    <string name="warm_exceed_year_max">For the better performance, some image would not be shown.</string>
+    <string name="error_deleted_trace_by_user">The trace is deleted by owner</string>
+    <string name="warm_remove_friend">Make sure to remove $ from Friend List?</string>
+    <string name="warm_remove_trace">Make sure to remove this item?</string>
+    <string name="warm_discard_trace">Discard the trace?</string>
+    <!--Permission-->
+    <string name="msg_permission">Please allow all permission, enjoy.</string>
+    <string name="msg_done">Done!</string>
+    <string name="msg_error_upload_image">Oops!Some wrong!</string>
+    <string name="msg_version_update">Hello! a latest version has been be released</string>
+    <string name="msg_sent_verify">We sent email to verify</string>
+    <string name="title_permission">Permission</string>
+    <string name="title_permission_camera">Enable Camera</string>
+    <!--Other-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="explore">Explore</string>
+    <string name="my_gallery">My Gallery</string>
+    <string name="social">Social</string>
+    <string name="more">More</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="display_name">Display Name</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="date">Date</string>
+    <string name="distance">Distance</string>
+    <string name="apply">Apply</string>
+    <string name="reset">Reset</string>
+    <string name="account_id">Account ID</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="camera">Camera</string>
+    <string name="remove_icon">Remove Icon</string>
+    <string name="select_icon">Select Icon</string>
+    <string name="remove_profile_icon">Remove Profile Icon</string>
+    <string name="select_profile_icon">Select Profile Icon</string>
+    <string name="filter">Filter</string>
+    <string name="refresh">Refresh</string>
+    <string name="setting">Setting</string>
+    <string name="allow">Allow</string>
+    <string name="finding_your_location">Finding your location</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="warning">Warning</string>
+    <string name="error">Error</string>
+    <string name="write_a_comment">Write a comment...</string>
+    <string name="write_a_feedback">Write a feedback...</string>
+    <string name="add_friend">Add Friend</string>
+    <string name="friend">Friend</string>
+    <string name="request">Request</string>
+    <string name="accept_request">Accept Request</string>
+    <string name="request_sent">Request Sent</string>
+    <string name="about_me">About Me</string>
+    <string name="home">Home</string>
+    <string name="no_description">No Description</string>
+    <string name="reaction_history">Reaction History</string>
+    <string name="favourite">Favourite</string>
+    <string name="inbox">Inbox</string>
+    <string name="reactions">Reactions</string>
+    <string name="comments">Comments</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="report">Report</string>
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+    <string name="remove">Remove</string>
+    <string name="enable">Enable</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="tag">Tag</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="edit_image">Edit Image</string>
+    <string name="done">Done</string>
+    <string name="forward">Forward</string>
+    <string name="t_continue">Continue</string>
+    <string name="gallery">Gallery</string>
+    <string name="retry">Retry</string>
+    <string name="latest_trace">Latest Trace</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="uploading">Uploading</string>
+    <string name="send">Send</string>
+    <string name="no_item">No Items</string>
+    <string name="view">View</string>
+    <string name="upload_to_wherever">Upload To Wherever</string>
+    <string name="removing">Removing</string>
+    <string name="updating">Updating</string>
+    <string name="add_favourite">Add Favourite</string>
+    <string name="remove_favourite">Remove Favourite</string>
+    <string name="no_any_update">No any update</string>
+    <string name="app_update">App Update</string>
+    <string name="news">News</string>
+    <string name="search">Search</string>
+    <string name="report_sent">Report Sent</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedback_sent">Feedback Sent</string>
+    <string name="email_sent">Email Sent</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="asteriskred"><font color='#cc0029'>*</font></string>
+    <!--Report-->
+    <string name="report_type_sex">Sexually explicit Content</string>
+    <string name="report_type_fake">Fake content</string>
+    <string name="report_type_other">Something else</string>
+
+</resources>

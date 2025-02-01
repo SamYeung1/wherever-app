@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 tools:context=".activity.camera.CameraFragment"
+android:background="@android:color/black">
+
+    <com.otaliastudios.cameraview.CameraView
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cameraPictureSizeAspectRatio="16:9"
+            android:keepScreenOn="true"
+            app:cameraJpegQuality="100"
+    />
+
+    <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/btn_capture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/bg_selectable_image_circle"
+            app:layout_anchor="@+id/camera"
+            app:layout_anchorGravity="bottom|center"
+            android:background="@drawable/btn_camera_setting"
+            android:src="@drawable/ic_cap_white_24dp"
+            android:scaleType="fitCenter"
+            android:padding="20dp"
+    />
+    <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/btn_flash"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top|start"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_camera_setting"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            android:src="@drawable/ic_flash_auto_white_24dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

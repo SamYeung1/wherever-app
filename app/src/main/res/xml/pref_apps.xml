@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_header_security" android:key="@string/pref_header_security">
+        <Preference
+                android:key="@string/pref_title_change_password"
+                android:title="@string/pref_title_change_password"/>
+        <Preference
+                android:key="@string/pref_title_logout"
+                android:title="@string/pref_title_logout"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_header_language">
+        <ListPreference
+                android:key="lang"
+                android:title="@string/pref_title_language"
+                android:summary="@string/pref_subtitle_language"
+                android:defaultValue="@string/pref_default_value_language"
+                android:entries="@array/pref_language_entities"
+                android:entryValues="@array/pref_language_entities_value"
+        />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_header_about">
+        <Preference
+                android:key="@string/pref_title_version"
+                android:title="@string/pref_title_version"/>
+        <Preference
+                android:key="@string/pref_title_feedback"
+                android:title="@string/pref_title_feedback"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

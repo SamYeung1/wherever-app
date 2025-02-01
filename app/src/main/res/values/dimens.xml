@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<resources>
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="card_elevation_none">0dp</dimen>
+    <dimen name="view_radius">8dp</dimen>
+    <dimen name="bottom_navigation_elevation">5dp</dimen>
+    <dimen name="fab_button_elevation">5dp</dimen>
+    <dimen name="padding_input_field">8dp</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="input_text_constraint_width_max">320dp</dimen>
+    <dimen name="input_button_constraint_width_max">256dp</dimen>
+    <dimen name="card_constraint_width_max">500dp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+    <dimen name="bottom_sheet_margin">64dp</dimen>
+    <dimen name="status_bar_height">24dp</dimen>
+</resources>

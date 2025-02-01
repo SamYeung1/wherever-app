@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layout_bottom_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/view_radius"
+        android:elevation="5dp"
+        app:behavior_peekHeight="110dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:id="@+id/layout_content">
+        <android.support.constraint.ConstraintLayout
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/status_bar_height">
+            <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintWidth_max="100dp"
+                    sothree:layout_constraintEnd_toEndOf="parent"
+                    sothree:layout_constraintStart_toStartOf="parent"
+                    sothree:layout_constraintTop_toTopOf="parent"/>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+            <LinearLayout
+                    android:foreground="@drawable/bg_selectable_menu_1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/user_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/img_primary_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        tools:src="@tools:sample/avatars"/>
+
+                <TextView
+                        android:id="@+id/tv_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text=""
+                        android:maxLines="1"
+                        android:ems="7"
+                        android:ellipsize="end"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            </LinearLayout>
+
+            <TextView
+                    android:foreground="@drawable/bg_selectable_menu_1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/tv_love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:drawableStart="@drawable/ic_love_white_24dp"
+                    android:drawableTint="@color/colorLove"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:text="1"
+                    android:drawablePadding="3dp"
+                    android:textColor="@color/colorLove"
+                    app:layout_constraintBottom_toBottomOf="@+id/user_profile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/user_profile"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@android:color/darker_gray"/>
+
+                <com.samyeung.wherever.view.custom.ItemView3
+                        android:id="@+id/item_view_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:itemView3Icon="@drawable/ic_today_gray_24dp"
+                        app:itemView3Title="@string/date"/>
+
+                <com.samyeung.wherever.view.custom.ItemView2
+                        android:id="@+id/item_view_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="@drawable/bg_selectable_menu_1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:itemView2Icon="@drawable/ic_comment_gray_24dp"
+                        app:itemView2Title="@string/write_a_comment"
+                        app:itemView2Value="0"
+                        app:itemView2CanEdit="false"
+                        app:itemView2AllCap="false"
+                />
+                <fragment
+                        android:layout_margin="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                />
+                <com.samyeung.wherever.view.custom.ItemView3
+                        android:id="@+id/item_view_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:itemView3Icon="@drawable/ic_today_gray_24dp"
+                        app:itemView3Title="@string/tag"/>
+                <android.support.v7.widget.RecyclerView
+                        android:padding="16dp"
+                        android:clipToPadding="false"
+                        android:id="@+id/list_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+    <include layout="@layout/loading" android:visibility="invisible"/>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".fragment.editor.UploadFragment">
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_error"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.constraint.ConstraintLayout
+                android:id="@+id/inner_layout_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            <ImageView
+                    android:src="@drawable/ic_sentiment_dissatisfied_gray_24dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/imageView3" android:layout_weight="1"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                    android:text="@string/msg_error_upload_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/tv_error"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                    app:layout_constraintStart_toStartOf="@+id/imageView3"
+                    android:textAppearance="@style/AppTheme.Title" android:layout_marginTop="8dp"/>
+            <LinearLayout
+
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                    app:layout_constraintStart_toStartOf="@+id/imageView3"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_error" android:layout_marginTop="32dp">
+                <android.support.v7.widget.AppCompatButton
+                        android:elevation="0dp"
+                        android:text="@string/retry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/AppTheme.AccentButton"
+                        android:id="@+id/btn_error"
+                />
+
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+    <include layout="@layout/layout_message_page_success" android:id="@+id/layout_done"
+             android:visibility="invisible"/>
+    <android.support.constraint.ConstraintLayout
+            android:visibility="invisible"
+            android:id="@+id/layout_progressing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ProgressBar
+                app:layout_constraintWidth_max="500dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/prg_uploading"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" android:layout_marginTop="32dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <android.support.v7.widget.AppCompatTextView
+                android:text="100%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_progress_value"
+                app:layout_constraintBottom_toTopOf="@+id/prg_uploading"
+                app:layout_constraintEnd_toEndOf="@+id/prg_uploading"
+                app:layout_constraintStart_toStartOf="@+id/prg_uploading" android:layout_marginBottom="8dp"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
